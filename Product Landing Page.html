@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> User story</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		body{
+			background-color: #ddd;
+			line-height: 1.5;
+		}
+		#nav-bar{
+			display: flex;
+			justify-content: space-around;
+			margin-top: 20px;
+		}
+		.nav-link{
+			padding-left: 60px;
+		}
+		#menu a{
+			text-decoration: none;
+			color: #000;
+		}
+		#form{
+			margin: auto;
+			text-align: center;
+		}
+		[type="email"]{
+			width: 250px;
+			padding: 5px;
+			margin-bottom: 10px;
+		}
+		[type="submit"]{
+			padding: 5px 10px;
+			text-transform: uppercase;
+			background-color: #f00;
+			border: none;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.content{
+			display: grid;
+			grid-template-rows: 1fr;
+			margin: 30px 0;
+			text-align: center;
+		}
+		#video{
+			margin:  auto 0;
+			text-align: center;
+		}
+		iframe{
+			width: 500px;
+			height: 300px;
+		}
+		.content2{
+			display: grid;
+			grid-gap: 20px;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			margin: 30px 200px;
+		}
+		#tromb1, #tromb2, #tromb3{
+			border: 1px solid #000;
+			text-align: center;
+		}
+		#tromb1 h2, #tromb2 h2, #tromb3 h2{
+			background-color: #ccc;
+			padding: 10px;
+			margin-top: auto;
+			text-transform: uppercase;
+		}
+		#tromb1 button, #tromb2 button, #tromb3 button{
+			background-color: #f00;
+			padding: 10px 15px;
+			border: none;
+			cursor: pointer;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+		footer{
+			background-color: #ccc;
+			margin: 0px 200px;
+			padding: 10px;
+		}
+		#footer_link{
+			display: flex;
+			justify-content: flex-end;
+		}
+		#footer_link a{
+			text-decoration: none;
+			color: #000;
+			padding: 5px;
+		}
+		footer p{
+			display: flex;
+			justify-content: flex-end;
+			opacity: 0.8;
+		}
+		@media (max-width: 700px){
+			#menu .nav-link{
+				padding-left: 30px;
+			}
+			.content2{
+				margin: 30px 100px;
+			}
+			iframe{
+				width: 400px;
+			}
+			footer{
+				margin: 0 100px;
+			}
+
+		}
+		@media (max-width: 600px){
+			#nav-bar{
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.content2{
+				margin: 30px 100px;
+			}
+			iframe{
+				width: 300px;
+			}
+			footer{
+				margin: 0 100px;
+			}
+			#footer_link, footer p{
+				display: flex;
+				justify-content: center;
+			}
+
+		}
+		@media (max-width: 400px){
+			#nav-bar{
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.content2{
+				margin: 30px 50px;
+			}
+			iframe{
+				width: 200px;
+			}
+			footer{
+				margin: 0 50px;
+			}
+			#footer_link, footer p{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<nav id="nav-bar">
+			<div>
+			<img src="original_trombones.png" width="250px">
+			</div>
+			<div id="menu">
+				<a href="" class="nav-link">Features</a>
+				<a href="" class="nav-link">How it Works</a>
+				<a href="" class="nav-link">Pricing</a>
+			</div>
+		</nav>
+		
+	</header>
+
+	<section>
+		
+		<form id="form">
+			<h1> Handcrafted, home-made masterpieces </h1>
+			<input type="email" name="email" placeholder="Enter your email address..." validate><br>
+			<input type="submit" name="submit" value="Get Started">
+		</form>
+	</section>
+
+	<section class="content">
+		<div id="part1">
+			<img src="hot.png" width="50px" height="50px">
+			<div id="content1">
+			<h2>Premium Materials </h2>
+			<p> Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase. </p>
+			</div>
+		</div>
+		<div id="part2">
+			<img src="shipping.png" width="50px" height="50px">
+			<div id="content2">
+			<h2>Fast Shipping </h2>
+			<p> We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied. </p>
+			</div>
+		</div>
+		<div id="part3">
+			<img src="quality.png" width="50px" height="50px">
+			<div id="content3">
+			<h2>Quality Assurance </h2>
+			<p> For every purchase you make, we will make ensure there are no damages or faults and we wil check and test the pitch of your instrument. </p>
+			</div>
+		</div>
+	</section>
+
+	<div id="video">
+	<iframe src="https://www.youtube.com/embed/y8Yv4pnO7qc"></iframe>
+	</div>
+
+	<section class="content2">
+		<div id="tromb1">
+		<h2>Tenor Trombone</h2>
+		<h3> &dollar;600 </h3>
+		<p>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.</p>
+		<button>Select</button>
+		</div>
+		<div id="tromb2">
+		<h2>Bass Trombone</h2>
+		<h3> &dollar;900 </h3>
+		<p>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.</p>
+		<button>Select</button>
+		</div>
+		<div id="tromb3">
+		<h2>Valve Trombone</h2>
+		<h3> &dollar;1200 </h3>
+		<p>Lorem ipsum.<br>Lorem ipsum.<br>Lorem ipsum dolor.<br>Lorem ipsum.</p>
+		<button>Select</button>
+		</div>
+	</section>
+
+	<footer>
+		<div id="footer_link">
+			<a href="">Privacy</a>
+			<a href="">Terms</a>
+			<a href="">Contact</a>
+		</div>
+		<p> Copyright 2016, Original Trombones </p>
+	</footer>
+
+</body>
+</html>
